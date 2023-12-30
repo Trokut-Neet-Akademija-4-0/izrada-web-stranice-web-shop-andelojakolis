@@ -11,18 +11,19 @@
         <div class="box-container">
             <div class="box">
                 <h3>quick links</h3>
-                <a href="#">home</a>
-                <a href="#">about</a>
-                <a href="#">products</a>
-                <a href="#">review</a>
-                <a href="#">contact</a>
+                <a href="#home">home</a>
+                <a href="#about">about</a>
+                <a href="#products">products</a>
+                <a href="#review">review</a>
+                <a href="#contact">contact</a>
             </div>
 
             <div class="box">
                 <h3>extra links</h3>
-                <a href="#">my account</a>
-                <a href="#">my order</a>
-                <a href="#">my favorite</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookie Policy</a>
             </div>
 
             <div class="box">
@@ -41,7 +42,11 @@
                 <img src="../images/credit-card.png" alt="credit card img">
             </div>
         </div>
-        <div class="credit"><span>© Anđelo Jakoliš</span></div>
+        <div class="credit">© <span id="yearFooter">2024</span> - Anđelo Jakoliš</div>
     </footer>
+    <script>
+        const date = new Date();
+        document.getElementById("yearFooter").innerHTML = date.getFullYear();
+    </script>
 </body>
 </html>
