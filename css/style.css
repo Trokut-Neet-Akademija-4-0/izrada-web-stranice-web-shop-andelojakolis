@@ -250,10 +250,173 @@ section {
     color: #555;
 }
 
-/*.products.box-container .box .content {
-     width: 27px;
-     height: 39px; 
-}*/
+.products .box-container .box .content {
+     padding: 2rem;
+     text-align: center;
+}
+
+.products .box-container .box .content h3 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.products .box-container .box .content .price {
+    font-size: 2rem;
+    color: lightgreen;
+    font-weight: bolder;
+    padding-top: 1rem;
+}
+
+.products .box-container .box .content .price span {
+    font-size: 1.5rem;
+    color: red;
+    font-weight: lighter;
+    text-decoration: line-through;
+}
+
+a.link-products {
+    font-size: 2rem;
+    margin: 14rem;
+    color: #333;
+}
+
+a.link-products:hover {
+    color: aquamarine;
+}
+
+.blog {
+    margin-top: 60px;
+}
+
+.blog .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.blog .box-container .box {
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    padding: 3rem 2rem;
+    position: relative;
+}
+
+.blog .box-container .box .fa-quote-right {
+    position: absolute;
+    bottom: 3rem;
+    right: 3rem;
+    font-size: 6rem;
+    color: #eee;
+}
+
+.blog .box-container .box .user {
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.blog .box-container .box p {
+    color: #999;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding-top: 2rem;
+}
+
+.blog .box-container .box .user img {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.blog .box-container .box .user h3 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.blog .box-container .box .user span {
+    font-size: 1.5rem;
+    color: #999;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination a {
+    font-size: 2rem;
+    color: #333;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+  }
+  
+.pagination a.active {
+background-color: aquamarine;
+color: white;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.contact .row {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.contact .row form {
+    flex: 1 1 40rem;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border: .1rem solid rgba(0,0,0,.1);
+    background: #fff;
+    border-radius: .5rem;
+}
+
+.contact .row .image {
+    flex: 1 1 40rem;
+}
+
+.contact .row .image img {
+    width: 100%;
+}
+
+.contact .row form .box {
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    text-transform: none;
+    border: .1rem solid rgba(0,0,0,.1);
+    border-radius: .5rem;
+    margin: .7rem 0;
+    width: 100%;
+}
+
+.contact .row form .box:focus {
+    border-color: aquamarine;
+}
+
+.contact .row form textarea {
+    height: 15rem;
+    resize: none;
+}
+
+.terms {
+    margin-top: 60px;
+}
+
+.terms p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
 
 @media (max-width:991px) {
     section {
