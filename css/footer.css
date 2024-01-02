@@ -33,6 +33,7 @@ footer .box-container .box a:hover {
 
 footer .box-container .box img {
     margin-top: 1rem;
+    margin-left: 7rem;
     height: 100px;
 }
 
@@ -46,3 +47,8 @@ footer .credit {
     border-top: .1rem solid rgba(0,0,0,.1);
 }
 
+@media (max-width:450px) {
+    footer .box-container .box img {
+        margin-left: 12.8rem;
+    }
+}

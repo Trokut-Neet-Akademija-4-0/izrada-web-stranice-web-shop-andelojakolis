@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <section class="cart" id="cart">
+        <div class="container">
+            <h1 class="heading">Shopping <span>Cart</span></h1>    
+            <div class="cart">    
+                <div class="products">    
+                    <div class="product">    
+                        <img src="./images/img-11.avif">   
+                        <div class="product-info">   
+                            <h3 class="product-name">Product 1</h3>   
+                            <h4 class="product-price" style="color:lightgreen">€39,99</h4>    
+                            <h4 class="product-offer">15%</h4>    
+                            <p class="product-quantity">Qnt: <input value="1" name="">
+                            <p class="btn">
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                                <span class="remove">Remove</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="./images/img-2.avif">
+                        <div class="product-info">
+                            <h3 class="product-name">Product 2</h3>
+                            <h4 class="product-price" style="color:lightgreen">€17.59</h4>
+                            <h4 class="product-offer">20%</h4>
+                            <p class="product-quantity">Qnt: <input value="1" name="">
+                            <p class="btn">
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                                <span class="remove">Remove</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-total"> 
+                    <p> 
+                        <span>Total Price</span> 
+                        <span style="color:lightgreen">€51,99</span> 
+                    </p> 
+                    <p>  
+                        <span>Number of Items</span>   
+                        <span>2</span>    
+                    </p>    
+                    <p>    
+                        <span>You Save</span>     
+                        <span style="color:lightgreen">€8,99</span>     
+                    </p>      
+                    <a href="./checkout.html" class="btn">Proceed to Checkout</a>       
+                </div>
+            </div>
+        
+        </div>
+        
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
